@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainContent"
+    tools:context=".ImageSlides">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnSlideShow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_play_circle_filled_24"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/hotc"
+            app:layout_constraintEnd_toStartOf="@+id/hotc" />
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        android:background="@color/transparent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewBackSlide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/back_with_background" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:src="@drawable/photos_img" />
+
+        <ImageView
+            android:id="@+id/imageViewHomeSlide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/home_icon" />
+
+    </LinearLayout>
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_marginLeft="100dp"-->
+<!--            android:background="@drawable/hotc_logo"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

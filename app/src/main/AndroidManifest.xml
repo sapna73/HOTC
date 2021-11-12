@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hotcphotographerapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hotc_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HOTCPhotographerApp">
+        <activity
+            android:name=".VideoScreen3"
+            android:exported="false" />
+        <activity
+            android:name=".VideoScreen2"
+            android:exported="false" />
+        <activity
+            android:name=".Exoplayer"
+            android:exported="false" />
+        <activity
+            android:name=".SlideShow"
+            android:exported="false" />
+        <activity
+            android:name=".VideoEvents"
+            android:exported="false" />
+        <activity
+            android:name=".PhotosDisplay"
+            android:exported="false"
+            android:label="Photos"
+            android:parentActivityName=".Events" />
+        <activity
+            android:name=".ImageSlides"
+            android:exported="false"
+            android:label="Photos"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".VideoScreens"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PhotosScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Thumbnails"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Events"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
